@@ -1,7 +1,8 @@
 const taskInput = document.getElementById("taskInput");
 const addTaskBtn = document.getElementById("addTaskBtn");
 const taskList = document.getElementById("taskList");
-
+var task = "task";
+var i = 0
 
 addTaskBtn.addEventListener("click", addTask);
 
@@ -29,9 +30,10 @@ nœud existant en tant que dernier enfant d'un nœud parent particulier.*/
 else{
  alert("Veuillez entrer une tâche valide.");
  }
+
+ localStorage.setItem(task.concat(i), taskText)
+ i++
 }
-
-
 
 
 
